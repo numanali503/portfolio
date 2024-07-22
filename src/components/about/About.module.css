@@ -1,0 +1,123 @@
+.about {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 3rem;
+  margin: 2rem 8.5rem;
+}
+.about-title {
+  position: relative;
+}
+.about-title h1 {
+  padding: 0 2rem;
+  font-size: 4rem;
+  font-weight: 600;
+}
+.about-title img {
+  position: absolute;
+  width: 12rem;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+}
+.about-section {
+  display: flex;
+  gap: 5rem;
+}
+.about-left img {
+  width: 30rem;
+}
+.about-right {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+.about-para {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  font-size: 1.6rem;
+  line-height: 2rem;
+  font-weight: 500;
+}
+.about-skills {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+.about-skill {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  transition: 0.3s;
+}
+
+.about-skill p {
+  min-width: 15rem;
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+
+.about-skill:hover {
+  transform: scale(1.05);
+  transition: 0.3s;
+}
+
+.about-skill hr {
+  outline: none;
+  border: none;
+  width: 50%;
+  height: 0.8rem;
+  border-radius: 5rem;
+  background: linear-gradient(265deg, #df8908 -5.09%, #b415ff 106.28%);
+}
+
+.about-achivements {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  margin-bottom: 4rem;
+}
+.about-achivement {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  transition: 0.5s;
+}
+.about-achivement:hover {
+  transform: scale(1.12);
+  transition: 0.5s;
+}
+
+.about-achivement h1 {
+  font-size: 4rem;
+  font-weight: 700;
+  background: linear-gradient(270deg, #df8908 50.8%, #b415ff 90.41%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.about-achivement p {
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+@media (max-width: 64em) {
+  .about-section {
+    flex-direction: column;
+  }
+  .about-left {
+    text-align: center;
+  }
+  .about-achivements {
+    justify-content: space-between;
+  }
+  .about-achivement {
+    gap: 1rem;
+  }
+  .about-achivement p {
+    text-align: center;
+    font-size: 1.6rem;
+  }
+}

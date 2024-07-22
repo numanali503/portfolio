@@ -1,0 +1,117 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 2rem 6rem;
+}
+
+.nav-menu {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  gap: 4rem;
+  font-size: 2rem;
+  transition: all 0.5s;
+}
+.nav-menu li {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+}
+.nav-menu li img {
+  display: flex;
+  margin: auto;
+}
+.link {
+  text-decoration: none;
+  color: white;
+  text-decoration-color: white;
+  transition: all 0.5s;
+  font-family: Outfit;
+}
+
+.link:hover {
+  background: linear-gradient(267deg, #da7c25 10%, #b923e1 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.link:active {
+  color: #b923e1;
+  background-color: #b923e1;
+}
+.nav-connect {
+  padding: 1.5rem 2rem;
+  border-radius: 50px;
+  background: linear-gradient(267deg, #da7c25 0.36%, #b923e1 102.6%);
+  font-size: 1.6rem;
+  cursor: pointer;
+  transition: 0.5s;
+  text-decoration: none;
+  color: white;
+}
+.nav-connect:hover {
+  transform: scale(1.05);
+}
+
+.logo {
+  font-size: 3.4rem;
+  font-family: Outfit;
+  background: linear-gradient(267deg, #da7c25 10%, #b923e1 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.nav-mob-close {
+  display: none;
+}
+.nav-mob-open {
+  display: none;
+}
+
+@media (max-width: 64em) {
+  .navbar {
+    margin: 2rem 0rem;
+  }
+  .nav-connect {
+    display: none;
+  }
+  .nav-mob-open {
+    display: block;
+    position: absolute;
+    right: 3rem;
+  }
+  .nav-mob-close {
+    display: block;
+    position: relative;
+    top: 3rem;
+    left: 29rem;
+    width: 3rem;
+  }
+  .nav-menu {
+    position: fixed;
+    flex-direction: column;
+    align-items: start;
+    top: 0;
+
+    gap: 3rem;
+    background-color: #1f0016;
+    width: 35rem;
+    height: 100%;
+    z-index: 2;
+    transition: right 0.5s;
+    right: -35rem;
+  }
+  .nav-menu li {
+    font-size: 3rem;
+    padding-left: 10rem;
+    flex-direction: row;
+    gap: 2rem;
+  }
+  .logo {
+    position: absolute;
+  }
+}
