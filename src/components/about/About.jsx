@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import styles from './About.module.css';
 import theme_pattern from '../../assets/theme_pattern.svg';
 import profile_photo from '../../assets/Profile_img.png';
@@ -16,17 +17,20 @@ function About() {
         <div className={styles['about-right']}>
           <div className={styles['about-para']}>
             <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita
-              nesciunt animi eos officiis quod? Placeat voluptas in, Lorem ipsum
-              dolor sit amet consectetur adipisicing elit. Suscipit quae
-              similique provident obcaecati error illo autem soluta, aspernatur,
-              consectetur beatae corporis incidunt eos deleniti! Quam ut odio
-              eum maxime pariatur!
+              Hello! I'm a passionate Front-end Developer with a Bachelor's
+              degree in Computer Science. I specialize in crafting accessible
+              and dynamic web applications using HTML, CSS, and JavaScript. My
+              expertise includes building scalable single-page applications with
+              React and enhancing performance with Next.js. I'm proficient in
+              version control with Git and creating responsive designs with
+              Tailwind CSS and Bootstrap. I also excel in managing state with
+              Context API and Redux, and implementing seamless navigation with
+              React Router.
             </p>
             <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum
-              ratione ex sed tempore impedit voluptatum quam sit iste
-              perspiciatis id!
+              Additonally, I'm committed to delivering high-quality web
+              solutions that meet user needs and business goals. Let's build
+              something amazing together!
             </p>
           </div>
           <div className={styles['about-skills']}>
